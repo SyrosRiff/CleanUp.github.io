@@ -19,7 +19,9 @@ Lauren Hong - Student Number(300295688)
 LH-eliza
 https://github.com/LH-eliza
 
-Tausif Islam - Student Number()
+Tausif Islam - Student Number(300304381)
+Tislatoo
+https://github.com/Tislatoo
 
 Jasmine Tam - Student Number(300310873)
 tamjasmine
