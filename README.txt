@@ -20,7 +20,10 @@ LH-eliza
 https://github.com/LH-eliza
 
 Tausif Islam - Student Number()
-Jasmine Tam - Student Number()
+
+Jasmine Tam - Student Number(300310873)
+tamjasmine
+https://github.com/tamjasmine
 
 Description: 
 Syros Riff: This tool helps you detect and control your overall plastic waste consumption.
