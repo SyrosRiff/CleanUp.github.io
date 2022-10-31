@@ -8,4 +8,7 @@ an oceanic theme which is relative because the product deals with waste.
 Orange is a contrasting colour to blue, and thus serves as a powerful highlight.
 
 Typography:
-Minimalist, not too formal nor to unprofessional. Happy letters that don't give off strong emotion or intensity.
+Minimalist, not too formal nor to unprofessional. "Happy" letters that don't give off strong emotion or intensity. The point is to give the user a positive,
+soothing experience.
+-LUCIDA SANS for non-headers
+-CORBEL for headers and other important text
