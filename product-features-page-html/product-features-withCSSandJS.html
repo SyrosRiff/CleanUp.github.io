@@ -1,154 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@600&family=Poppins&family=Quicksand:wght@300&family=Righteous&display=swap");
-    
+<style>
     h3 {
-      font-family: "Corbel";
-      color: darkblue;
-      text-decoration: overline;
-      margin: auto;
-      border-top-style: solid;
-      border-color: orange;
-      text-align: center;
+        font-family: 'Corbel';
+        color: darkblue ;
+        text-decoration: overline ;
+        margin: auto ;
+        border-top-style: solid ;
+        border-color: orange ;
+        text-align: center ;
     }
-    p.Crisis {
-      font-family: "Lucida Sans";
-    }
-    .nav_links a,
-    .cta,
-    .overlay__content a {
-      font-family: "Fredoka One", cursive;
-      font-weight: 500;
-      font-size: 30px;
-      color: rgb(28, 56, 121);
-      text-decoration: none;
-      border-radius: 20px;
-    }
+    p {
+        font-family: 'Lucida Sans' ;
+        text-align: center ;
 
-    .nav_links li {
-      padding: 0px 20px;
     }
-
-    .nav_links li a {
-      transition: all 0.9s ease 0s;
+    p2 {
+      font-family: 'Lucida Sans' ;
+      text-align: center ;
+      border-style: solid ;
+      color: blue ;
+      border-radius: 8px ;
+      margin-left: 470px ;
     }
-
-    .nav_links li a:hover {
-      color: #0088a9;
-    }
-
-    .cta {
-      margin-left: 20px;
-      padding: 9px 25px;
-      background-color: rgba(0, 136, 169, 1);
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease 0s;
-    }
-
-    .cta:hover {
-      background-color: rgba(0, 136, 169, 0.8);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background: rgb(28, 56, 121);
-    }
-
-    .background {
-      width: 100%;
-    }
-
-    header {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 30px 10%;
-      background-color: white;
-    }
-
-    .logo {
-      margin-right: auto;
-    }
-
-    /* Mobile Nav */
-
-    .menu {
-      display: none;
-    }
-
-    .overlay {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      left: 0;
-      top: 0;
-      background-color: #24252a;
-      overflow-x: hidden;
-      transition: all 0.5s ease 0s;
-    }
-
-    .overlay--active {
-      width: 100%;
-    }
-
-    .overlay__content {
-      display: flex;
-      height: 100%;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .overlay a {
-      padding: 15px;
-      font-size: 36px;
-      display: block;
-      transition: all 0.3s ease 0s;
-    }
-
-    .overlay a:hover,
-    .overlay a:focus {
-      color: #0088a9;
-    }
-    .overlay .close {
-      position: absolute;
-      top: 20px;
-      right: 45px;
-      font-size: 60px;
-      color: #edf0f1;
-      cursor: pointer;
-    }
-
-    @media screen and (max-height: 450px) {
-      .overlay a {
-        font-size: 20px;
-      }
-      .overlay .close {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-      }
-    }
-
-    @media only screen and (max-width: 800px) {
-      .nav__links,
-      .cta {
-        display: none;
-      }
-      .menu {
-        display: initial;
-      }
-    }
-  </style>
+</style>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -156,82 +31,67 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <a class="logo" href="/"
-        ><img
-          src="https://media.discordapp.net/attachments/1029868201422631002/1033917146469761034/CLEAN_UP.png"
-          width="120"
-          height="120"
-          alt="logo"
-      /></a>
+    <div class="header">
       <nav>
-        <ul class="nav_links">
-          <li><a href="#">our impact</a></li>
-          <li><a href="#">features</a></li>
-          <li><a href="#">solution</a></li>
-          <li><a href="#">contact</a></li>
+        <div class="container">
+          <img src =
+          https://media.discordapp.net/attachments/1029868201422631002/1033917146469761034/CLEAN_UP.png
+          class = "recyle" alt ="">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#ourImpact">our impact</a></li>
+          <li><a href="#features">features</a></li>
+          <li><a href="#solutions">solutions</a></li>
+          <li><a href="#contactUs">contact us</a></li>
+          <li><a href="#login">login</a></li>
         </ul>
       </nav>
-      <a class="cta" href="#">login</a>
-      <p class="menu cta">Menu</p>
-    </header>
-    <div class="overlay">
-      <a class="close">&times;</a>
-      <div class="overlay__content">
-        <a href="#">our impact</a>
-        <a href="#">features</a><
-        <a href="#">solution</a>
-        <a href="#">contact</a>
-      </div>
     </div>
-    <div type="button" class="button">
+    <div type = "button" class="button">
+    <img
+      id="bannerImage"
+      src="https://cdn.discordapp.com/attachments/1029868201422631002/1033943121295327282"
+    /><br />
+    <button onclick="">
+      <span class="button_txt">Scan Items</span
+      ><span class="button_icon"></span>
+      <span class="button_caption"
+        >see what's in your products/how to dispose of them properly</span
+      >
+    </button>
+    <button onclick="">
+      <span class="button_txt">Cautions</span><span class="button_icon"></span>
+      <span class="button_caption"
+        >Understanding the harmful effects of certain materials</span
+      >
+    </button>
+    <button onclick="">
+      <span class="button_txt"></span>Lifespan<span class="button_icon"></span>
+      <span class="button_caption"
+        >Shelf life of your products and their disposal</span
+      >
+    </button>
+    <button onclick="">
+      <span class="button_txt">Track your footprint</span>
+      <span class="button_icon"></span>
+      <span class="button_caption">Track your monthly consumption</span>
+    </button>
+    <br><br>
+    <div class="Crisis">
+      <h3>Help solve the waste crisis</h3>
+      <p>
+        We live in a consumerist society with products<br> being able to appear
+        within minutes of ordering them online. The app intends to be<br> the little
+        conscience you have at the back of your head and understand<br> the effects
+        of what happens when you purchase a specific product.<br> The slight
+        reminder of what you’re actually purchasing<br> and its effects on the
+        world.
+      </p>
       <img
-        id="bannerImage"
-        src="https://cdn.discordapp.com/attachments/1029868201422631002/1033943121295327282"
-      /><br />
-      <button onclick="">
-        <span class="button_txt">Scan Items</span
-        ><span class="button_icon"></span>
-        <span class="button_caption"
-          >see what's in your products/how to dispose of them properly</span
-        >
-      </button>
-      <button onclick="">
-        <span class="button_txt">Cautions</span
-        ><span class="button_icon"></span>
-        <span class="button_caption"
-          >Understanding the harmful effects of certain materials</span
-        >
-      </button>
-      <button onclick="">
-        <span class="button_txt"></span>Lifespan<span
-          class="button_icon"
-        ></span>
-        <span class="button_caption"
-          >Shelf life of your products and their disposal</span
-        >
-      </button>
-      <button onclick="">
-        <span class="button_txt">Track your footprint</span>
-        <span class="button_icon"></span>
-        <span class="button_caption">Track your monthly consumption</span>
-      </button>
-      <br /><br />
-      <div class="Crisis">
-        <h3>Help solve the waste crisis</h3>
-        <p>
-          We live in a consumerist society with products being able to appear
-          within minutes of ordering them online. The app intends to be the
-          little conscience you have at the back of your head and understand the
-          effects of what happens when you purchase a specific product. The
-          slight reminder of what you’re actually purchasing and its effects on
-          the world.
-        </p>
-        <img
-          scr="https://media.discordapp.net/attachments/1029868201422631002/1033947408855482459/unknown.png"
-        />
-        <p>Help tackle waste digitally for a cleaner future</p>
-      </div>
+        scr="https://media.discordapp.net/attachments/1029868201422631002/1033947408855482459/unknown.png"
+      />
+      <br><br>
+      <p2>Help tackle waste digitally for a cleaner future</p2>
     </div>
   </body>
 </html>
