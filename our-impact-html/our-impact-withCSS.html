@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <!--CSS styling-->
+  <!--The CSS style codes-->
   <style>
     body {
-      background-color: lightblue;
+      background-color: white;
     }
     h1 {
       font-family :'Corbel' ;
@@ -15,6 +15,11 @@
       font-family: 'Lucida Sans' ;
       text-align: center ;
       margin-bottom: 20px ;
+      border-bottom-style: groove ;
+      border-color: orange ;
+      border-radius: 8px ;
+      
+
     }
     
     img.turtle{
@@ -29,7 +34,7 @@
 
 img.people {
   display: block;
-  width: 100%;
+  width: 300px;
   height: auto;
 }
 
@@ -133,6 +138,16 @@ img.city {
       margin: auto ;
       font-family: 'Lucida Sans' ;
       }
+    .button{
+      background-color: darkblue ;
+      border: blue;
+      color: orange ;
+      padding: 15px 32px;
+      text-align: center;
+      font-family: 'Corbel' ;
+      cursor: pointer;
+      border-radius: 6px ;
+    }
   </style>
     <head>
       </style>
@@ -161,7 +176,7 @@ img.city {
         <br>
         <p>Here's how CleanUp is positively affecting the world.</p>
       <div class="container">
-        <img src="https://www.theregreview.org/wp-content/uploads/2017/04/sea-turtle.jpg" width ="700" height = "600" class="turtle">
+        <img src="https://www.theregreview.org/wp-content/uploads/2017/04/sea-turtle.jpg" alt ="TURTLE" width ="700" height = "600" class="turtle">
       </div>
         <br><br>
 
@@ -173,12 +188,12 @@ img.city {
         <br><br>
         <h3>CleanUp has a healthy and growing community of over 100,000 active users across the globe.</h3>
         <div class="container">
-          <img src = "https://www.shareicon.net/data/512x512/2015/12/24/692557_people_512x512.png" width = "200" height = "200" class="people">
+          <img src = "https://www.shareicon.net/data/512x512/2015/12/24/692557_people_512x512.png" alt ="OUR COMMUNITY" width = "200" height = "200" class="people">
           <div class="overlay">
             <div class="text">Join us!</div>
           </div>
         </div>
-          <button type="button"
+          <button class="button" type="button"
           onclick="document.getElementById('demo').innerHTML='Joined!'">JOIN OUR COMMUNITY</button>
           <p id="demo"></p>
           
@@ -187,9 +202,9 @@ img.city {
         <p5>The downward trend has allowed for the development of cleaner, healthier and happier communities.</p5>
         <br><br>
         <div class="container">
-          <img src = "https://wallpaperaccess.com/full/417584.jpg" width = "500" height = "300" class="city">
+          <img src = "https://wallpaperaccess.com/full/417584.jpg" alt = "OUR WORLD" width = "500" height = "300" class="city">
             <div class="overlay">
-              <div class="text">By 2025, CleanUp aims to reduce global carbon emissions by 25%.</div>
+              <div class="text">By 2025, CleanUp aims to reduce <br>global carbon emissions by 25%.</div>
           </div>
         </div> 
         <br>
