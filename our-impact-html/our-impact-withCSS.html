@@ -14,16 +14,89 @@
       font-family: 'Lucida Sans' ;
       text-align: center ;
     }
-    div {
-      margin-top: 100px;
-      margin-bottom:100px;
-        }  
-    img {
+    
+    img.turtle{
       max-width: auto;
-      border-radius: 8px ;
+      height: auto;
+      border-radius: 8px;
     }
-    
-    
+
+    .container {
+  position: relative;
+  width: 50%;
+}
+
+img.people {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+img.city {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}    
+
     h2 {
       margin-left: 300px;
       font-family: 'Corbel' ;
@@ -70,7 +143,7 @@
               <div class="container">
                 <img src =
                 https://media.discordapp.net/attachments/1029868201422631002/1033917146469761034/CLEAN_UP.png
-                class = "recyle alt ="">
+                class = "recyle alt =">
               </div>
               <ul class="nav-links">
                 <li><a href="#ourImpact">our impact</a></li>
@@ -84,8 +157,8 @@
         <h1><strong>OUR IMPACT</strong></h1>
         <br>
         <p>Here's how CleanUp is positively affecting the world.</p>
-      <div>
-        <img src="https://www.theregreview.org/wp-content/uploads/2017/04/sea-turtle.jpg" width ="700" height = "600">
+      <div class="container">
+        <img src="https://www.theregreview.org/wp-content/uploads/2017/04/sea-turtle.jpg" width ="700" height = "600" class="turtle">
       </div>
         <br><br>
 
@@ -96,8 +169,11 @@
         <br><br>
         <br><br>
         <h3>CleanUp has a healthy and growing community of over 100,000 active users across the globe.</h3>
-        <div class="people">
-          <img src = "https://www.shareicon.net/data/512x512/2015/12/24/692557_people_512x512.png" width = "200" height = "200">
+        <div class="container">
+          <img src = "https://www.shareicon.net/data/512x512/2015/12/24/692557_people_512x512.png" width = "200" height = "200" class="people">
+          <div class="overlay">
+            <div class="text">Join us!</div>
+          </div>
         </div>
           <button>JOIN OUR COMMUNITY</button>
         <br><br>
@@ -105,8 +181,10 @@
         <p5>The downward trend has allowed for the development of cleaner, healthier and happier communities.</p5>
         <br><br>
         <div class="container">
-          <img src = "https://wallpaperaccess.com/full/417584.jpg" width = "500" height = "300">
-            <div class="bottomright">By 2025, CleanUp hopes to reduce global carbon emissions by 25%</div>
+          <img src = "https://wallpaperaccess.com/full/417584.jpg" width = "500" height = "300" class="city">
+            <div class="overlay">
+              <div class="text">By 2025, CleanUp aims to reduce global carbon emissions by 25%.</div>
+          </div>
         </div> 
         <br>
         <br><br><br>
