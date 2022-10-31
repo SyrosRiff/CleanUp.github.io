@@ -1,3 +1,4 @@
+/*CSS for Our Impact*/
 <style>
 body {
       background-color: white;
@@ -145,6 +146,31 @@ img.city {
       cursor: pointer;
       border-radius: 6px ;
     }
+
+
+/*CSS for Features */
 </style>
+h3 {
+        font-family: 'Corbel';
+        color: darkblue ;
+        text-decoration: overline ;
+        margin: auto ;
+        border-top-style: solid ;
+        border-color: orange ;
+        text-align: center ;
+    }
+    p {
+        font-family: 'Lucida Sans' ;
+        text-align: center ;
+
+    }
+    p2 {
+      font-family: 'Lucida Sans' ;
+      text-align: center ;
+      border-style: solid ;
+      color: blue ;
+      border-radius: 8px ;
+      margin-left: 470px ;
+    }
 
 </html>
