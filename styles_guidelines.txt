@@ -1,11 +1,13 @@
 Overall Look:
 -Minimalist, calming
 -Optimistic
+The product deals touches on subjects like pollution, waste and climate change. The product aims to help with these issues, which means the website
+should reflect the optimistic and uplifting nature of CleanUp. A chaotic look can be 'aggressive', which contradicts the 'calmness'.
 
 Coloration:
 Blue is the main colour, with a highlight colour of orange. Blue not only matches the calming demeanor, it gives the page 
-an oceanic theme which is relative because the product deals with waste.
-Orange is a contrasting colour to blue, and thus serves as a powerful highlight.
+an oceanic theme which is relative because the product deals with waste and plastics.
+Orange is a contrasting colour to blue, and thus serves as a powerful highlight to draw attention to important parts of the website.
 
 Typography:
 Minimalist, not too formal nor to unprofessional. "Happy" letters that don't give off strong emotion or intensity. The point is to give the user a positive,
