@@ -5,55 +5,119 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CleanUp</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 <body>
-    <h2>Contact Us</h2>
-    <table>
-        <tr>
-            <td>Email:<td>
-            <td>contact@cleanup.com<td>
-        </tr>
-        <tr>
-            <td>Phone:<td>
-            <td>(800) 123 - 456<td>
-        </tr>
-        <tr>
-            <td>Address:<td>
-            <td>Ottawa, ON<td>
-        </tr>
-    </table>
+    <header>
+        <a class="logo" href="/"
+          ><img
+            src="https://media.discordapp.net/attachments/1029868201422631002/1033917146469761034/CLEAN_UP.png"
+            width="120"
+            height="120"
+            alt="logo"
+        /></a>
+        <nav>
+          <ul class="nav_links">
+            <li><a href="#">our impact</a></li>
+            <li><a href="#">features</a></li>
+            <li><a href="#">solution</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="#">login</a>
+        <p class="menu cta">Menu</p>
+      </header>
+      <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+          <a href="#">our impact</a>
+          <a href="#">features</a>
+          <a href="#">solution</a>
+          <a href="#">contact</a>
+        </div>
+      </div>
 
-    <h2>Our Socials</h2>
-    <button>Join the community</button>
-
+    
     <div class="container">
-        <h2>Have a question?</h2>
-        <p>Email us and get a response back.</p>
-    </div>
+        <div class="contact-box">
+            <div class="contact-box-left">
+                <h2>Contact Us</h2>
+                <table>
+                    <tr>
+                        <td>Email:<td>
+                        <td>contact@cleanup.com<td>
+                    </tr>
+                    <tr>
+                        <td>Phone:<td>
+                        <td>(800) 123 - 456<td>
+                    </tr>
+                    <tr>
+                        <td>Address:<td>
+                        <td>Ottawa, ON<td>
+                    </tr>
+                </table>
 
-    <div class="input-row">
-        <div class="input-group">
-            <label>Email*</label>
-            <input type="text" placeholder="example@email.com" maxLength="20">
-        </div>
-        <div class="input-group">
-            <label>First Name*</label>
-            <input type="text">
-        </div>
-        <div class="input-group">
-            <label>Last Name*</label>
-            <input type="text">
+                <div class="header">
+                    <h2>Our Socials</h2>
+                    <button>Join the community</button>
+                </div>
+            </div>
+            <div class="contact-box-right">
+                <h2>Have a question?</h2>
+                <p>Email us and get a response back.</p>
+           
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email*</label>
+                            <input type="text" placeholder="example@email.com" maxLength="20">
+                        </div>
+                        <div class="input-group">
+                            <label>First Name*</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Last Name*</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </form>
+                <label>How may we help you?*</label>
+                <textarea name="" id="" cols="40" rows="10"></textarea>
+                
+                <button type="submit">Send</button>
+
+            </div>
         </div>
     </div>
-    <label>How may we help you?*</label>
-    <textarea name="" id="" cols="40" rows="10"></textarea>
-    <button>Send</button>
-
-    <h2>The Team</h2>
-    <h3 class="name">Markus Gandia</h3>
-    <h3 class="name">Lauren Hong</h3>
-    <h3 class="name">Tausif Islam</h3>
-    <h3 class="name">Tristan Roy</h3>
-    <h3 class="name">Jasmine Tam</h3>
+    <div class="team">
+        <div class="header">
+            <h2>The Team</h2>
+        </div>
+        <div class="sub-team">
+            <div class="card">
+                <div class ="name">Markus Gandia</div>
+                <div class="about">description</div>
+            </div>
+            <div class="card">
+                <div class ="name">Lauren Hong</div>
+                <div class="about">description</div>
+            </div>
+            <div class="card">
+                <div class ="name">Tausif Islam</div>
+                <div class="about">description</div>
+            </div>
+            <div class="card">
+                <div class ="name">Tristan Roy</div>
+                <div class="about">description</div>
+            </div>
+            <div class="card">
+                <div class ="name">Jasmine Tam</div>
+                <div class="about">description</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
