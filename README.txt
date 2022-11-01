@@ -1,4 +1,4 @@
-Organization Name: Syros Riff
+Organization Name: Clean Up
 Organization Page: https://github.com/SyrosRiff
 Organization Repository Page Link: https://github.com/SyrosRiff/
 Organization READMe.txt File Page Link: https://github.com/SyrosRiff/SyrosRiff.github.io/blob/main/README.txt
