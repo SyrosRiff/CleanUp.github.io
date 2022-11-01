@@ -28,7 +28,7 @@ tamjasmine
 https://github.com/tamjasmine
 
 Description: 
-Syros Riff: This tool helps you detect and control your overall plastic waste consumption.
+Clean Up: This tool helps you detect and control your overall plastic waste consumption.
 It's a smart tool that allows you to have a transparent understanding of what goes into the 
 products you consume daily. This application has various features: It takes the items
 you buy and shows the types of plastic within the protection, analyzes the CO2 emissions,
