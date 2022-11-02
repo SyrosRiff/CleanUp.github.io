@@ -4,7 +4,7 @@ Organization Repository Page Link: https://github.com/SyrosRiff/
 Organization READMe.txt File Page Link: https://github.com/SyrosRiff/SyrosRiff.github.io/blob/main/README.txt
 
 Members:
-Team name: Syros Riff
+Team name: Clean Up
 
 Team Member Names: 
 Tristan Roy - Student Number(300311454)
