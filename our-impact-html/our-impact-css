@@ -1,2 +1,21 @@
 <style>
-</style>
+      @import url("https://fonts.googleapis.com/css?family=Signika");
+
+        body {
+          background-color: #FAF9F6;
+        }
+        h1{
+          font-family: "Signika", sans-serif;
+          font-size: 60px;
+          color: darkblue;
+          line-height: 6px ;  
+          margin: 60px ;
+        }
+        p{
+         font-family: "Lucida Sans", sans-serif ;
+         font-size: 20px ;
+         margin: 55px ;
+        }
+        
+        
+    </style>
