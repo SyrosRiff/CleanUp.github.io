@@ -1,8 +1,13 @@
 <style>
-      @import url("https://fonts.googleapis.com/css?family=Signika");
+        @import url("https://fonts.googleapis.com/css?family=Signika");
 
         body {
           background-color: #FAF9F6;
+        }
+        .intro{
+          border-bottom: solid ;
+          border-color: darkblue ;
+
         }
         h1{
           font-family: "Signika", sans-serif;
@@ -11,11 +16,11 @@
           line-height: 6px ;  
           margin: 60px ;
         }
-        p{
+        p1{
          font-family: "Lucida Sans", sans-serif ;
          font-size: 20px ;
          margin: 55px ;
+         line-height:60px ;
         }
         
-        
-    </style>
+</style>
