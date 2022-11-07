@@ -7,7 +7,7 @@
         .intro{
           border-bottom: solid ;
           border-color: darkblue ;
-
+          text-align: right ;
         }
         h1{
           font-family: "Signika", sans-serif;
@@ -22,5 +22,21 @@
          margin: 55px ;
          line-height:60px ;
         }
+        div.turtle{
+          background-image: url(https://www.mainlymaldives.co.uk/wp-content/uploads/2014/01/Turtle-banner-705x237.jpg);
+          width: 900px ;
+          height: 200px ;
+          background-repeat: no-repeat ;
+        }
+        .turtle .rec-sq{
+          position: absolute ;
+          top: 200px;
+          left: 640px;
+        }
+        .circle {
+          width: 15rem;
+          height: 15rem;
+          background: darkblue;
+          border-radius: 50%;
+        }
         
-</style>
