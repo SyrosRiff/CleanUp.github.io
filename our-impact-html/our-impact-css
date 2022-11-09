@@ -39,7 +39,6 @@
           background: darkblue;
           border-radius: 50%;
         }
-
         p.empty{
           line-height: 200px ;
           color: #FAF9F6 ;
@@ -61,12 +60,19 @@
           font-size: 20px ;
           margin-left: 200px;
         }
+        .recText{
+          text-align: center ;
+        }
         p2{
           font-family: "Lucida Sans", sans-serif ;
           font-size: 18px ;
-          margin-left: 300px ;
-          line-height: 20px ;
-          
+          text-align: center ;
+          line-height: 50px ;
+        }
+        .recycling{
+          display: flex ;
+          align-items: center ;
+          justify-content: center ;
         }
         .recImg{
           height: 600px ;
@@ -81,9 +87,9 @@
         }
         .empty2{
           color: white ;
-          line-height: 80px ;
+          line-height: 400px ;
         }
-        div.community{
+        .community{
           display: flex ;
           align-items: center ;
           justify-content: center ;
@@ -106,7 +112,7 @@
           right: 0 ;
           background-color: darkblue ;
           overflow: hidden ;
-          width: 90% ;
+          width: 95% ;
           height: 0 ;
           transition: .5s ease ;
           border-radius: 8px ;
@@ -133,6 +139,52 @@
           font-size: 20px ;
           padding-right: 20px ;
           margin-left: 50px ;
-          border-top: solid darkblue 3px ;
         }
-   </style>
+        .fosterText{
+          border-top: solid 3px darkblue ;
+        }
+        .secondC{
+          width: 15rem;
+          height: 15rem;
+          background: darkblue;
+          border-radius: 50%;
+          left: 4px ;
+        }
+        .stat{
+          display: flex ;
+          align-items: center ;
+        }
+        h3{
+          font-family: "Signika", sans-serif ;
+          color: darkblue ;
+        }
+        .tokyo {
+          width: 900px ;
+          height: 300px ;
+          object-fit: cover ;
+        }
+        div.city{
+          display: flex ;
+        }
+        div.bubble{
+          background-color: darkblue ;
+          border-radius: 50% ;
+          text-align: center ;
+          position: relative ;
+          line-height: 40px ;
+          width: 300px ;
+          height: 300px ;
+        }
+        .bubble::after {
+          content: "" ;
+          display: block ;
+          padding-bottom: 100% ;
+        }
+        .bubbleText{
+          font-family: "Lucida Sans", sans-serif ;
+          color: white ;
+          position: absolute ; 
+          width: 100% ;
+          text-align: center ;     
+        }
+ </style>
