@@ -44,7 +44,6 @@
           background: darkblue;
           border-radius: 50%;
         }
-
         p.empty{
           line-height: 200px ;
           color: #FAF9F6 ;
@@ -66,12 +65,19 @@
           font-size: 20px ;
           margin-left: 200px;
         }
+        .recText{
+          text-align: center ;
+        }
         p2{
           font-family: "Lucida Sans", sans-serif ;
           font-size: 18px ;
-          margin-left: 300px ;
-          line-height: 20px ;
-          
+          text-align: center ;
+          line-height: 50px ;
+        }
+        .recycling{
+          display: flex ;
+          align-items: center ;
+          justify-content: center ;
         }
         .recImg{
           height: 600px ;
@@ -86,9 +92,9 @@
         }
         .empty2{
           color: white ;
-          line-height: 80px ;
+          line-height: 400px ;
         }
-        div.community{
+        .community{
           display: flex ;
           align-items: center ;
           justify-content: center ;
@@ -111,7 +117,7 @@
           right: 0 ;
           background-color: darkblue ;
           overflow: hidden ;
-          width: 90% ;
+          width: 95% ;
           height: 0 ;
           transition: .5s ease ;
           border-radius: 8px ;
@@ -138,7 +144,53 @@
           font-size: 20px ;
           padding-right: 20px ;
           margin-left: 50px ;
-          border-top: solid darkblue 3px ;
+        }
+        .fosterText{
+          border-top: solid 3px darkblue ;
+        }
+        .secondC{
+          width: 15rem;
+          height: 15rem;
+          background: darkblue;
+          border-radius: 50%;
+          left: 4px ;
+        }
+        .stat{
+          display: flex ;
+          align-items: center ;
+        }
+        h3{
+          font-family: "Signika", sans-serif ;
+          color: darkblue ;
+        }
+        .tokyo {
+          width: 900px ;
+          height: 300px ;
+          object-fit: cover ;
+        }
+        div.city{
+          display: flex ;
+        }
+        div.bubble{
+          background-color: darkblue ;
+          border-radius: 50% ;
+          text-align: center ;
+          position: relative ;
+          line-height: 40px ;
+          width: 300px ;
+          height: 300px ;
+        }
+        .bubble::after {
+          content: "" ;
+          display: block ;
+          padding-bottom: 100% ;
+        }
+        .bubbleText{
+          font-family: "Lucida Sans", sans-serif ;
+          color: white ;
+          position: absolute ; 
+          width: 100% ;
+          text-align: center ;     
         }
     </style>
     </head>
@@ -159,13 +211,20 @@
           <h2>WHAT WE DO</h2>
           <p class="slogan">Choose green, conveniently.</p><br><br>
         </div>
+        <div class="recText"> 
+          <p2>We provide options for you to minimize your carbon footprint and turn your daily happenings into a net positive for the world.<br>Check out our Features page for details!</p2>
+        </div>
         <div class = "recycling">
-          <p2>We provide options for you to minimize your carbon footprint and turn your daily happenings into a net positive for the world.<br>Check out our Features page for details.</p2>
           <img class = "recImg" src= "https://miro.medium.com/max/1200/1*I0sFfIkz5toL83FAul05rg.jpeg" alt="Garbage">
         </div>
         <div class="empty2">Second easter egg</div>
         <div class="community">
-          <p2>CleanUp hopes to foster a growing and healthy community across the globe.</p2>
+          <div class="secondCircle">
+            <div class="secondC"></div>
+          </div>
+          <div class="fosterText">
+            <p2>CleanUp hopes to foster a growing and healthy community across the globe.</p2>
+          </div>
           <div class="communityImg">
             <img class="people" src = "https://i.pinimg.com/originals/a0/f0/f9/a0f0f9216b2b34f851c48b279408d83c.png" alt="World">
             <div class="overlay">
@@ -174,12 +233,17 @@
           </div>
         </div>
         <br><br>
-        <div>
+        <div class="stat">
           <h3>According to Health Canada, statistics show a 25% increase in solid waste diversion and a 10% decrease in solid waste disposal per person from 2002 to 2018.</h3>
-          <p4>CleanUp helps you be a part of that downward trend.</p4>
+          <br><br>
         </div>
-        <br><br>
-          <img class = "city" src = "https://wallpaperaccess.com/full/417584.jpg" width = "500" height = "300">
- 
+        <div class = "city">
+          <img class = "tokyo" src = "https://wallpaperaccess.com/full/417584.jpg" width = "500" height = "300">
+          <div class = "bubble">
+            <div class="bubbleText"><br>CleanUp helps you<br> be a part of <br>that downward trend.</div>
+          </div>
+        </div>
+        <br>
+        <br>
     </body>
   </html>
