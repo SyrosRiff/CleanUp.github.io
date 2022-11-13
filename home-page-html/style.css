@@ -275,31 +275,6 @@ button:hover {
   grid-template-columns: 1fr 1fr;
 }
 
-.initaitve-text h2 {
-  color: #1c3879;
-  font-size: 75px;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-}
-.initaitve-text h5 {
-  color: #1c3879;
-  letter-spacing: 2px;
-  font-size: 22px;
-  margin-bottom: 25px;
-  text-transform: capitalize;
-}
-.initaitve-text p {
-  color: #1c3879;
-  letter-spacing: 1px;
-  line-height: 28px;
-  font-size: 18px;
-  margin-bottom: 45px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px 15px;
-}
-
 .info {
   width: 1130px;
   margin: 0 auto;
@@ -316,4 +291,5 @@ button:hover {
   height: 500px;
   width: 700px;
   display: block;
+  
 }
