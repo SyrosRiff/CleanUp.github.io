@@ -6,132 +6,172 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
   <link
     href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap"
     rel="stylesheet"
   />
 </head>
 <body>
-  <body>
-    <header>
-      <a class="logo" href="/"
-        ><img src="Clean Up.png" width="75" height="75" alt="logo"
-      /></a>
-      <nav>
-        <ul class="nav__links">
-          <li><a href="#">Our Impact</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-      <a class="cta" href="#">Login</a>
-      <p class="menu cta">Menu</p>
-    </header>
-    <div class="overlay">
-      <a class="close">&times;</a>
-      <div class="overlay__content">
-        <a href="#">Our Impact</a>
-        <a href="features.html">Features</a>
-        <a href="#">Contact Us</a>
+  <header>
+    <a class="logo" href="/"
+      ><img src="Clean Up.png" width="75" height="75" alt="logo"
+    /></a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="#">Our Impact</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="#">Login</a>
+    <p class="menu cta">Menu</p>
+  </header>
+  <div class="overlay">
+    <a class="close">&times;</a>
+    <div class="overlay__content">
+      <a href="#">Our Impact</a>
+      <a href="features.html">Features</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="mobile.js"></script>
+
+  <image src="color.png" class="stripe"></image>
+
+  <div class="buttons">
+    <div class="phone">
+      <img id="element" src="iPhone 12 Pro Max – 1.png" />
+    </div>
+    <div class="group">
+      <div class="head">
+        <h1>How Does it Work?</h1>
+      </div>
+      <div class="container">
+        <div class="btn-grid">
+          <button
+            type="button"
+            class="value"
+            onclick="document.getElementById('element').src = 'iPhone 12 Pro Max – 1.png'"
+          >
+            <span class="button_txt">Scan Items</span>
+            <span class="button_caption"
+              >See what's in your products/how to dispose of them properly</span
+            >
+            <span class="button_icon">
+              <ion-icon name="scan-outline"></ion-icon>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="value"
+            onclick="document.getElementById('element').src = 'iPhone 12 Pro Max – 3.png'"
+          >
+            <span class="button_txt">Cautions</span>
+            <span class="button_caption"
+              >Understanding the harmful effects of certain materials</span
+            >
+            <span class="button_icon">
+              <ion-icon name="alert-circle-outline"></ion-icon>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="value"
+            onclick="document.getElementById('element').src = 'iPhone 12 Pro Max – 4.png'"
+          >
+            <span class="button_txt">Lifespan</span>
+            <span class="button_caption"
+              >Shelf life of your products and their disposal</span
+            >
+            <span class="button_icon">
+              <ion-icon name="arrow-redo-sharp"></ion-icon>
+            </span>
+          </button>
+          <button
+            class="value"
+            type="button"
+            onclick="document.getElementById('element').src = 'iPhone 12 Pro Max – 2.png'"
+          >
+            <span class="button_txt">Track your footprint</span>
+            <span class="button_caption">Track your monthly consumption</span>
+            <span class="button_icon">
+              <ion-icon name="analytics-outline"></ion-icon>
+            </span>
+          </button>
+        </div>
       </div>
     </div>
-    <script type="text/javascript" src="mobile.js"></script>
+  </div>
+  <image src="color.png" class="stripe"></image>
 
-    <image src="color.png" class="stripe"></image>
-
-    <div class="buttons">
-      <div class="phone">
-        <img id="element" src="iPhone 12 Pro Max – 1.png" />
-      </div>
-      <div class="group">
-        <div class="head">
-          <h1>How Does it Work?</h1>
+  <section class="scan">
+    <section class="about">
+      <div class="main">
+        <div class="about-text">
+          <h2>&nbsp;Scanning &nbsp;Products</h2>
+          <p>
+            Scanning products allows you to gain a quicker way to dispose of
+            your products. First, once you scan the product, it provides you
+            with three features. With the first feature, it allows you to learn
+            about the cautions of the product- such as warnings about various
+            parts of the packaging. Also, allows you to learn about the type of
+            plastic and its effects on the planet.
+          </p>
         </div>
-        <div class="container">
-          <div class="btn-grid">
-            <button
-              type="button"
-              class="value"
-              onclick="document.getElementById('element').src = 'iPhone 12 Pro Max – 1.png'"
-            >
-              <span class="button_txt">Scan Items</span>
-              <span class="button_caption"
-                >See what's in your products/how to dispose of them
-                properly</span
-              >
-              <span class="button_icon">
-                <ion-icon name="scan-outline"></ion-icon>
-              </span>
+        <div class="carousel">
+          <div class="carousel__item carousel__item--visible">
+            <img src="iPhone X, XS, 11 Pro – 1.png" />
+          </div>
+          <div class="carousel__item">
+            <img src="iPhone X, XS, 11 Pro – 6.png" />
+          </div>
+          <div class="carousel__item">
+            <img src="iPhone X, XS, 11 Pro – 5.png" />
+          </div>
+          <div class="carousel__item">
+            <img src="iPhone X, XS, 11 Pro – 7.png" />
+          </div>
+
+          <div class="carousel__actions">
+            <button id="carousel__button--prev" aria-label="Previous slide">
+              <
             </button>
-            <button
-              type="button"
-              class="value"
-              onclick="document.getElementById('element').src = 'iPhone 12 Pro Max – 3.png'"
-            >
-              <span class="button_txt">Cautions</span>
-              <span class="button_caption"
-                >Understanding the harmful effects of certain materials</span
+            <button id="carousel__button--next" aria-label="Next slide">
               >
-              <span class="button_icon">
-                <ion-icon name="alert-circle-outline"></ion-icon>
-              </span>
-            </button>
-            <button
-              type="button"
-              class="value"
-              onclick="document.getElementById('element').src = 'iPhone 12 Pro Max – 4.png'"
-            >
-              <span class="button_txt">Lifespan</span>
-              <span class="button_caption"
-                >Shelf life of your products and their disposal</span
-              >
-              <span class="button_icon">
-                <ion-icon name="arrow-redo-sharp"></ion-icon>
-              </span>
-            </button>
-            <button
-              class="value"
-              type="button"
-              onclick="document.getElementById('element').src = 'iPhone 12 Pro Max – 2.png'"
-            >
-              <span class="button_txt">Track your footprint</span>
-              <span class="button_caption">Track your monthly consumption</span>
-              <span class="button_icon">
-                <ion-icon name="analytics-outline"></ion-icon>
-              </span>
             </button>
           </div>
         </div>
       </div>
-    </div>
-
-    <image src="color.png" class="stripe"></image>
-    <section class="about">
-      <h1 class="save">Help solve the global waste crisis.</h1>
-      <div class="main">
-        <img src="waste.png" />
-        <div class="about-text">
-          <p>
-            We live in a consumerist society with products being able to appear
-            within minutes of ordering them online. The app intends to be the
-            little conscience you have at the back of your head and understand
-            the effects of what happens when you purchase a specific product.
-            The slight reminder of what you’re actually purchasing and its
-            effects on the world.
-          </p>
-          <p>Help tackle waste digitally for a cleaner future</p>
-        </div>
-      </div>
     </section>
-    <image src="color.png" class="stripe"></image>
+  </section>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <image src="color.png" class="stripe"></image>
+  <section class="about">
+    <h1 class="save">Help solve the global waste crisis.</h1>
+    <div class="main">
+      <img src="waste.png" />
+      <div class="about-text">
+        <p>
+          We live in a consumerist society with products being able to appear
+          within minutes of ordering them online. The app intends to be the
+          little conscience you have at the back of your head and understand the
+          effects of what happens when you purchase a specific product. The
+          slight reminder of what you’re actually purchasing and its effects on
+          the world.
+        </p>
+        <p>Help tackle waste digitally for a cleaner future</p>
+      </div>
+    </div>
+  </section>
+  <image src="color.png" class="stripe"></image>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
 </body>
