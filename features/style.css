@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Fredoka+One&family=Inter:wght@600&family=Poppins&family=Quicksand:wght@300&family=Righteous&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,7 +29,7 @@ header {
 .nav__links a,
 .cta,
 .overlay__content a {
-  font-family: "Montserrat", sans-serif;
+  font-family:'Fredoka', sans-serif;
   font-weight: 500;
   color: #1c3879;
   text-decoration: none;
@@ -154,41 +155,59 @@ button {
   display: block;
 }
 
+h2 {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+}
+
 .about {
   width: 100%;
   padding: 100px 0px;
   background-color: #ffffff;
 }
 .about-text h2 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
   color: #1c3879;
   font-size: 75px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
-.about-text h5 {
-  color: #1c3879;
-  letter-spacing: 2px;
-  font-size: 22px;
-  margin-bottom: 25px;
-  text-transform: capitalize;
-}
+
 .about-text p {
+  font-family: "Fredoka", sans-serif;
   color: #1c3879;
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 18px;
   margin-bottom: 45px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 15px;
-  padding-right: 150px;
+  padding: 20px 20px;
 }
 .main {
   width: 1130px;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  display: grid;
+  box-sizing: border-box;
+  background-color: white;
+  grid-template-columns: 1fr 1fr;
+}
+.item{
+  margin-left: 100px;
+}
+.track {
+  width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: right;
   justify-content: space-around;
   display: grid;
   box-sizing: border-box;
@@ -204,16 +223,17 @@ button {
 }
 
 .save {
+  font-family: "Fredoka", sans-serif;
   align-items: center;
   justify-content: space-around;
   display: grid;
   font-size: 50px;
   margin-bottom: 20px;
-  text-decoration: underline;
-  color: #041f4e;
+  color: #2c4f8d;
 }
 
 .head h1 {
+  font-family: "Fredoka", sans-serif;
   text-align: left;
   display: grid;
   font-size: 60px;
@@ -243,6 +263,7 @@ button {
 }
 
 .button_txt {
+  font-family: "Fredoka", sans-serif;
   display: inline-flex;
   align-items: center;
   padding: 0 24px;
@@ -414,4 +435,3 @@ button {
   align-items: center;
   margin: auto;
 }
-
