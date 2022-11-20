@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@600&family=Poppins&family=Quicksand:wght@300&family=Righteous&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fredoka:wght@400;500&family=Inter:wght@600&family=Poppins&family=Quicksand:wght@300&family=Righteous&display=swap');
 
 * {
   box-sizing: border-box;
@@ -19,12 +19,12 @@ header {
 }
 
 .top {
-  position: relative;
-  display: flex;
+  position: static;
+  display: block;
   justify-content: center;
-  align-items: center;
   transform-style: preserve-3d;
   z-index: -1;
+  overflow: auto;
 }
 
 .top img {
@@ -39,8 +39,7 @@ header {
 .nav__links a,
 .cta,
 .overlay__content a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-family:'Fredoka', sans-serif;
   color: #1c3879;
   text-decoration: none;
 }
@@ -94,7 +93,7 @@ header {
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: #24252a;
+  background-color: #d8dae4;
   overflow-x: hidden;
   transition: width 0.5s ease 0s;
 }
@@ -172,26 +171,31 @@ header {
 }
 
 h1 {
+  font-family: 'Fredoka', cursive;
   color: white;
   margin: 20px 0px 20px;
-  font-size: 75px;
+  font-size: 120px;
 }
 h3 {
+  font-family: 'Fredoka', cursive;
+  font-weight: 200;
   color: white;
-  font-size: 25px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 h4 {
+  font-family: 'Fredoka', cursive;
   color: rgb(255, 255, 255);
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .content p {
+  font-family: 'Fredoka', cursive;
   margin-bottom: 20px;
   color: white;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 45px;
   display: flex;
   line-height: 25px;
@@ -219,12 +223,14 @@ h4 {
   background-color: #ffffff;
 }
 .about-text h2 {
+  font-family:'Fredoka', sans-serif;
   color: #1c3879;
   font-size: 75px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 .about-text h5 {
+  font-family:'Fredoka', sans-serif;
   color: #1c3879;
   letter-spacing: 2px;
   font-size: 22px;
@@ -232,6 +238,7 @@ h4 {
   text-transform: capitalize;
 }
 .about-text p {
+  font-family:'Fredoka', sans-serif;
   color: #1c3879;
   letter-spacing: 1px;
   line-height: 28px;
@@ -300,6 +307,7 @@ button:hover {
 	padding: 100px 0px;
 }
 .title h2{
+  font-family:'Fredoka', sans-serif;
 	color: white;
 	font-size: 75px;
 	width: 1130px;
@@ -313,6 +321,7 @@ button:hover {
 	min-height: 400px;
 }
 .card{
+  font-family:'Fredoka', sans-serif;
 	height: 320px;
 	width: 335px;
 	padding: 20px 35px;
@@ -323,6 +332,7 @@ button:hover {
 	overflow: hidden;
 	text-align: center;
 }
+
 .card i{
 	font-size: 50px;
 	display: block;
@@ -332,6 +342,7 @@ button:hover {
 
 }
 h5{
+  font-family:'Fredoka', sans-serif;
 	color: white;
 	font-size: 23px;
 	margin-bottom: 15px;
