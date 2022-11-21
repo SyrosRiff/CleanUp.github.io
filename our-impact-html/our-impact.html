@@ -1,249 +1,498 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>CleanUp - Our Impact</title>
-      
-      <style>
-        @import url("https://fonts.googleapis.com/css?family=Signika");
+  <head>
+    <title>CleanUp - Our Impact</title>
 
-        body {
-          background-color: #FAF9F6;
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Signika");
+      @import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Fredoka+One&family=Inter:wght@600&family=Poppins&family=Quicksand:wght@300&family=Righteous&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: white(28, 56, 121);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        background-color: #ffffff;
+      }
+
+      .logo {
+        cursor: pointer;
+      }
+
+      .stripe {
+        height: 50px;
+        width: 100%;
+      }
+
+      .nav__links a,
+      .cta,
+      .overlay__content a {
+        font-family: "Fredoka", sans-serif;
+        font-weight: 500;
+        color: #1c3879;
+        text-decoration: none;
+      }
+
+      .nav__links {
+        list-style: none;
+        display: flex;
+      }
+
+      .nav__links li {
+        padding: 0px 20px;
+      }
+
+      .nav__links li a {
+        color: #1c3879;
+        margin: 0 -0.25rem;
+        padding: 0 0.25rem;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      .nav__links li a:hover {
+        box-shadow: inset 100px 0 0 0 #1c3879;
+        color: white;
+      }
+
+      .cta {
+        padding: 9px 25px;
+        background-color: #1c3879;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease 0s;
+      }
+
+      .cta:hover {
+        background-color: #dce1ee;
+        color: rgb(28, 56, 121);
+      }
+
+      /* Mobile Nav */
+
+      .menu {
+        display: none;
+      }
+
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: #24252a;
+        overflow-x: hidden;
+        transition: width 0.5s ease 0s;
+      }
+
+      .overlay--active {
+        width: 100%;
+      }
+
+      .overlay__content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .overlay a {
+        padding: 15px;
+        font-size: 36px;
+        display: block;
+        transition: color 0.3s ease 0s;
+      }
+
+      .overlay a:hover,
+      .overlay a:focus {
+        color: #0088a9;
+      }
+      .overlay .close {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        color: #edf0f1;
+      }
+
+      @media screen and (max-height: 450px) {
+        .overlay a {
+          font-size: 20px;
         }
-        .intro{
-          border-bottom: solid ;
-          border-color: darkblue ;
-          text-align: right ;
+        .overlay .close {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
         }
-        h1{
-          font-family: "Signika", sans-serif;
-          font-size: 60px;
-          color: darkblue;
-          line-height: 6px ;  
-          margin: 60px ;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .nav__links,
+        .cta {
+          display: none;
         }
-        p1{
-          font-family: "Lucida Sans", sans-serif ;
-          font-size: 20px ;
-          margin: 55px ;
-          line-height:60px ;
+        .menu {
+          display: initial;
         }
-        div.turtle{
-          background-image: url(https://www.mainlymaldives.co.uk/wp-content/uploads/2014/01/Turtle-banner-705x237.jpg);
-          width: 900px ;
-          height: 200px ;
-          background-repeat: no-repeat ;
+      }
+      .overlay--active {
+        width: 100%;
+      }
+
+      .overlay__content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .overlay a {
+        padding: 15px;
+        font-size: 36px;
+        display: block;
+        transition: color 0.3s ease 0s;
+      }
+
+      .overlay a:hover,
+      .overlay a:focus {
+        color: #0088a9;
+      }
+      .overlay .close {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        color: #edf0f1;
+      }
+
+      @media screen and (max-height: 450px) {
+        .overlay a {
+          font-size: 20px;
         }
-        .turtle .rec-sq{
-          position: absolute ;
-          top: 200px;
-          left: 640px;
+        .overlay .close {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
         }
-        .circle {
-          width: 15rem;
-          height: 15rem;
-          background: darkblue;
-          border-radius: 50%;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .nav__links,
+        .cta {
+          display: none;
         }
-        p.empty{
-          line-height: 200px ;
-          color: #FAF9F6 ;
+        .menu {
+          display: initial;
         }
-        div.what{
-          text-align: center ;
-          line-height: 30px ;
-          margin-bottom: 100px ;
-        }
-        h2{
-          font-family: "Signika", sans-serif ;
-          font-size: 60px ;
-          color: darkblue ;
-          margin-left: 300px ;
-        }
-        p.slogan{
-          text-decoration: overline 2px darkblue solid ;
-          font-family: "Lucida Sans", sans-serif ;
-          font-size: 20px ;
-          margin-left: 200px;
-        }
-        .recText{
-          text-align: center ;
-        }
-        p2{
-          font-family: "Lucida Sans", sans-serif ;
-          font-size: 18px ;
-          text-align: center ;
-          line-height: 50px ;
-        }
-        .recycling{
-          display: flex ;
-          align-items: center ;
-          justify-content: center ;
-        }
-        .recImg{
-          height: 600px ;
-          border-radius: 300px ;
-          width: 800px ;
-          object-fit: cover ;
-          cursor: pointer ;
-          transition: 0.3s ;
-        }
-        .recImg:hover {
-          opacity: 0.3 ;
-        }
-        .empty2{
-          color: white ;
-          line-height: 400px ;
-        }
-        .community{
-          display: flex ;
-          align-items: center ;
-          justify-content: center ;
-        }
-        .communityImg{
-          position: relative ;
-          width: 50%;
-        }
-        img.People{
-          display: block ;
-          width: 400px ;
-          height: 300px ;
-          object-fit: cover ;
-          margin-left: 90px ;
-        }
-        .overlay{
-          position: absolute ;
-          bottom: 100% ;
-          left: 0 ;
-          right: 0 ;
-          background-color: darkblue ;
-          overflow: hidden ;
-          width: 95% ;
-          height: 0 ;
-          transition: .5s ease ;
-          border-radius: 8px ;
-        }
-        .communityImg:hover .overlay{
-          bottom: 0 ;
-          height: 100% ;
-        }
-        .overlayText{
-          font-family: "Lucida Sans", sans-serif ;
-          white-space: nowrap ;
-          color: white ;
-          font-size: 20px ;
-          position: absolute ;
-          overflow: hidden ;
-          top: 50% ;
-          left: 50% ;
-          transform: translate(-50%,50%) ;
-          -ms-transform: translate(-50%,-50%)
-        }
-        .communityText{
-          font-family: "Signika", sans-serif ;
-          color: darkblue ;
-          font-size: 20px ;
-          padding-right: 20px ;
-          margin-left: 50px ;
-        }
-        .fosterText{
-          border-top: solid 3px darkblue ;
-        }
-        .secondC{
-          width: 15rem;
-          height: 15rem;
-          background: darkblue;
-          border-radius: 50%;
-          left: 4px ;
-        }
-        .stat{
-          display: flex ;
-          align-items: center ;
-        }
-        h3{
-          font-family: "Signika", sans-serif ;
-          color: darkblue ;
-        }
-        .tokyo {
-          width: 900px ;
-          height: 300px ;
-          object-fit: cover ;
-        }
-        div.city{
-          display: flex ;
-        }
-        div.bubble{
-          background-color: darkblue ;
-          border-radius: 50% ;
-          text-align: center ;
-          position: relative ;
-          line-height: 40px ;
-          width: 300px ;
-          height: 300px ;
-        }
-        .bubble::after {
-          content: "" ;
-          display: block ;
-          padding-bottom: 100% ;
-        }
-        .bubbleText{
-          font-family: "Lucida Sans", sans-serif ;
-          color: white ;
-          position: absolute ; 
-          width: 100% ;
-          text-align: center ;     
-        }
+      }
+
+      .wrapper {
+        display: flex;
+      }
+
+      body {
+        background-color: #faf9f6;
+      }
+      .intro {
+        border-bottom: solid;
+        border-color: darkblue;
+        text-align: right;
+      }
+      h1 {
+        font-family: "Signika", sans-serif;
+        font-size: 60px;
+        color: darkblue;
+        line-height: 6px;
+        margin: 60px;
+      }
+      p1 {
+        font-family: "Lucida Sans", sans-serif;
+        font-size: 20px;
+        margin: 55px;
+        line-height: 60px;
+      }
+      div.turtle {
+        background-image: url(https://www.mainlymaldives.co.uk/wp-content/uploads/2014/01/Turtle-banner-705x237.jpg);
+        width: 900px;
+        height: 200px;
+        background-repeat: no-repeat;
+      }
+      .turtle .rec-sq {
+        position: absolute;
+        top: 200px;
+        left: 640px;
+      }
+      .circle {
+        width: 15rem;
+        height: 15rem;
+        background: darkblue;
+        border-radius: 50%;
+      }
+      p.empty {
+        line-height: 200px;
+        color: #faf9f6;
+      }
+      div.what {
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 100px;
+      }
+      h2 {
+        font-family: "Signika", sans-serif;
+        font-size: 60px;
+        color: darkblue;
+        margin-left: 300px;
+      }
+      p.slogan {
+        text-decoration: overline 2px darkblue solid;
+        font-family: "Lucida Sans", sans-serif;
+        font-size: 20px;
+        margin-left: 200px;
+      }
+      .recText {
+        text-align: center;
+      }
+      p2 {
+        font-family: "Lucida Sans", sans-serif;
+        font-size: 18px;
+        text-align: center;
+        line-height: 50px;
+      }
+      .recycling {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .recImg {
+        height: 600px;
+        border-radius: 300px;
+        width: 800px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .recImg:hover {
+        opacity: 0.3;
+      }
+      .empty2 {
+        color: white;
+        line-height: 400px;
+      }
+      .community {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .communityImg {
+        position: relative;
+        width: 50%;
+      }
+      img.People {
+        display: block;
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        margin-left: 90px;
+      }
+      .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: darkblue;
+        overflow: hidden;
+        width: 95%;
+        height: 0;
+        transition: 0.5s ease;
+        border-radius: 8px;
+      }
+      .communityImg:hover .overlay {
+        bottom: 0;
+        height: 100%;
+      }
+      .overlayText {
+        font-family: "Lucida Sans", sans-serif;
+        white-space: nowrap;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+      .communityText {
+        font-family: "Signika", sans-serif;
+        color: darkblue;
+        font-size: 20px;
+        padding-right: 20px;
+        margin-left: 50px;
+      }
+      .fosterText {
+        border-top: solid 3px darkblue;
+      }
+      .secondC {
+        width: 15rem;
+        height: 15rem;
+        background: darkblue;
+        border-radius: 50%;
+        left: 4px;
+      }
+      .stat {
+        display: flex;
+        align-items: center;
+      }
+      h3 {
+        font-family: "Signika", sans-serif;
+        color: darkblue;
+      }
+      .tokyo {
+        width: 900px;
+        height: 300px;
+        object-fit: cover;
+      }
+      div.city {
+        display: flex;
+      }
+      div.bubble {
+        background-color: darkblue;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        line-height: 40px;
+        width: 300px;
+        height: 300px;
+      }
+      .bubble::after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+      .bubbleText {
+        font-family: "Lucida Sans", sans-serif;
+        color: white;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+      }
     </style>
-    </head>
-    <body>
-      <div class="intro">
-        <h1><strong>OUR IMPACT</strong></h1>
-        <p1>Here's how CleanUp hopes to positively affect the world.</p1>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/"
+        ><img src="Clean Up.png" width="75" height="75" alt="logo"
+      /></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="our-impact.html">Our Impact</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#">Login</a>
+      <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+        <a href="index.html">Home</a>
+        <a href="our-impact.html">Our Impact</a>
+        <a href="features.html">Features</a>
+        <a href="contact.html">Contact Us</a>
       </div>
-      <br><br>
-      <div class = "turtle">
-        <div class="rec-sq">
-          <div class="circle"></div>
+    </div>
+    <script type="text/javascript" src="mobile.js"></script>
+    <div class="intro">
+      <h1><strong>OUR IMPACT</strong></h1>
+      <p1>Here's how CleanUp hopes to positively affect the world.</p1>
+    </div>
+    <br /><br />
+    <div class="turtle">
+      <div class="rec-sq">
+        <div class="circle"></div>
+      </div>
+    </div>
+    <div class="empty"><p class="empty">You shouldn't be seeing this</p></div>
+    <div class="what">
+      <h2>WHAT WE DO</h2>
+      <p class="slogan">Choose green, conveniently.</p>
+      <br /><br />
+    </div>
+    <div class="recText">
+      <p2
+        >We provide options for you to minimize your carbon footprint and turn
+        your daily happenings into a net positive for the world.<br />Check out
+        our Features page for details!</p2
+      >
+    </div>
+    <div class="recycling">
+      <img
+        class="recImg"
+        src="https://miro.medium.com/max/1200/1*I0sFfIkz5toL83FAul05rg.jpeg"
+        alt="Garbage"
+      />
+    </div>
+    <div class="empty2">Second easter egg</div>
+    <div class="community">
+      <div class="secondCircle">
+        <div class="secondC"></div>
+      </div>
+      <div class="fosterText">
+        <p2
+          >CleanUp hopes to foster a growing and healthy community across the
+          globe.</p2
+        >
+      </div>
+      <div class="communityImg">
+        <img
+          class="people"
+          src="https://i.pinimg.com/originals/a0/f0/f9/a0f0f9216b2b34f851c48b279408d83c.png"
+          alt="World"
+        />
+        <div class="overlay">
+          <div class="overlayText">Download the app!</div>
         </div>
       </div>
-        <div class="empty"> <p class="empty"> You shouldn't be seeing this</p>
+    </div>
+    <br /><br />
+    <div class="stat">
+      <h3>
+        According to Health Canada, statistics show a 25% increase in solid
+        waste diversion and a 10% decrease in solid waste disposal per person
+        from 2002 to 2018.
+      </h3>
+      <br /><br />
+    </div>
+    <div class="city">
+      <img
+        class="tokyo"
+        src="https://wallpaperaccess.com/full/417584.jpg"
+        width="500"
+        height="300"
+      />
+      <div class="bubble">
+        <div class="bubbleText">
+          <br />CleanUp helps you<br />
+          be a part of <br />that downward trend.
         </div>
-        <div class="what">
-          <h2>WHAT WE DO</h2>
-          <p class="slogan">Choose green, conveniently.</p><br><br>
-        </div>
-        <div class="recText"> 
-          <p2>We provide options for you to minimize your carbon footprint and turn your daily happenings into a net positive for the world.<br>Check out our Features page for details!</p2>
-        </div>
-        <div class = "recycling">
-          <img class = "recImg" src= "https://miro.medium.com/max/1200/1*I0sFfIkz5toL83FAul05rg.jpeg" alt="Garbage">
-        </div>
-        <div class="empty2">Second easter egg</div>
-        <div class="community">
-          <div class="secondCircle">
-            <div class="secondC"></div>
-          </div>
-          <div class="fosterText">
-            <p2>CleanUp hopes to foster a growing and healthy community across the globe.</p2>
-          </div>
-          <div class="communityImg">
-            <img class="people" src = "https://i.pinimg.com/originals/a0/f0/f9/a0f0f9216b2b34f851c48b279408d83c.png" alt="World">
-            <div class="overlay">
-              <div class="overlayText">Download the app!</div>
-            </div>
-          </div>
-        </div>
-        <br><br>
-        <div class="stat">
-          <h3>According to Health Canada, statistics show a 25% increase in solid waste diversion and a 10% decrease in solid waste disposal per person from 2002 to 2018.</h3>
-          <br><br>
-        </div>
-        <div class = "city">
-          <img class = "tokyo" src = "https://wallpaperaccess.com/full/417584.jpg" width = "500" height = "300">
-          <div class = "bubble">
-            <div class="bubbleText"><br>CleanUp helps you<br> be a part of <br>that downward trend.</div>
-          </div>
-        </div>
-        <br>
-        <br>
-    </body>
-  </html>
+      </div>
+    </div>
+    <br />
+    <br />
+  </body>
+</html>
