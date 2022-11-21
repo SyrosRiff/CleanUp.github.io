@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fredoka:wght@400;500&family=Inter:wght@600&family=Poppins&family=Quicksand:wght@300&family=Righteous&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Fredoka+One&family=Inter:wght@600&family=Poppins&family=Quicksand:wght@300&family=Righteous&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-  background: rgb(28, 56, 121);
+  background: white(28, 56, 121);
 }
 
 header {
@@ -18,28 +17,20 @@ header {
   background-color: #ffffff;
 }
 
-.top {
-  position: static;
-  display: block;
-  justify-content: center;
-  transform-style: preserve-3d;
-  z-index: -1;
-  overflow: auto;
-}
-
-.top img {
-  object-fit: contain;
-  width: 100%;
-}
-
 .logo {
   cursor: pointer;
+}
+
+.stripe {
+  height: 50px;
+  width: 100%;
 }
 
 .nav__links a,
 .cta,
 .overlay__content a {
-  font-family:'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
   color: #1c3879;
   text-decoration: none;
 }
@@ -93,7 +84,7 @@ header {
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: #d8dae4;
+  background-color: #24252a;
   overflow-x: hidden;
   transition: width 0.5s ease 0s;
 }
@@ -150,6 +141,20 @@ header {
   }
 }
 
+.top {
+  position: static;
+  display: block;
+  justify-content: center;
+  transform-style: preserve-3d;
+  z-index: -1;
+  overflow: auto;
+}
+
+.top img {
+  object-fit: contain;
+  width: 100%;
+}
+
 .content {
   position: absolute;
   transform: translateY(-50%);
@@ -171,27 +176,27 @@ header {
 }
 
 h1 {
-  font-family: 'Fredoka', cursive;
+  font-family: "Fredoka", cursive;
   color: white;
   margin: 20px 0px 20px;
   font-size: 120px;
 }
 h3 {
-  font-family: 'Fredoka', cursive;
+  font-family: "Fredoka", cursive;
   font-weight: 200;
   color: white;
   font-size: 50px;
   margin-bottom: 20px;
 }
 h4 {
-  font-family: 'Fredoka', cursive;
+  font-family: "Fredoka", cursive;
   color: rgb(255, 255, 255);
   letter-spacing: 2px;
   font-size: 40px;
 }
 
 .content p {
-  font-family: 'Fredoka', cursive;
+  font-family: "Fredoka", cursive;
   margin-bottom: 20px;
   color: white;
   letter-spacing: 1px;
@@ -223,14 +228,14 @@ h4 {
   background-color: #ffffff;
 }
 .about-text h2 {
-  font-family:'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   color: #1c3879;
   font-size: 75px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 .about-text h5 {
-  font-family:'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   color: #1c3879;
   letter-spacing: 2px;
   font-size: 22px;
@@ -238,7 +243,7 @@ h4 {
   text-transform: capitalize;
 }
 .about-text p {
-  font-family:'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   color: #1c3879;
   letter-spacing: 1px;
   line-height: 28px;
@@ -298,68 +303,66 @@ button:hover {
   height: 500px;
   width: 700px;
   display: block;
-  
 }
 
-.service{
-	background: #0d1c3f;
-	width: 100%;
-	padding: 100px 0px;
+.service {
+  background: #0d1c3f;
+  width: 100%;
+  padding: 100px 0px;
 }
-.title h2{
-  font-family:'Fredoka', sans-serif;
-	color: white;
-	font-size: 75px;
-	width: 1130px;
-	margin: 30px auto;
-	text-align: center;
+.title h2 {
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  font-size: 75px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
 }
-.box{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 400px;
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
 }
-.card{
-  font-family:'Fredoka', sans-serif;
-	height: 320px;
-	width: 335px;
-	padding: 20px 35px;
-	background: #112552;
-	border-radius: 20px;
-	margin: 15px;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
+.card {
+  font-family: "Fredoka", sans-serif;
+  height: 320px;
+  width: 335px;
+  padding: 20px 35px;
+  background: #112552;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
 }
 
-.card i{
-	font-size: 50px;
-	display: block;
-	text-align: center;
-	margin: 25px 0px;
-	color: #f9004d;
-
+.card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #f9004d;
 }
-h5{
-  font-family:'Fredoka', sans-serif;
-	color: white;
-	font-size: 23px;
-	margin-bottom: 15px;
+h5 {
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
 }
-.text p{
-	color: white;
-	font-size: 16px;
-	line-height: 27px;
-	margin-bottom: 25px;
+.text p {
+  color: white;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
 }
-.card .button{
-	background-color:#1c3879;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 9px 22px;
-	border-radius: 30px;
-	transition: .4s; 
+.card .button {
+  background-color: #1c3879;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: 0.4s;
 }
