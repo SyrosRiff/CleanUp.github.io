@@ -1,14 +1,11 @@
-﻿@import url("https://fonts.googleapis.com/css?family=Signika");
-
 body{
     margin: 0px;
     padding: 0px;  
 }
 footer{
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    margin-top; -100px
 }
 .font{
     font-family: "Signika", sans-serif;
@@ -42,18 +39,17 @@ footer{
     background: #1c3879;
     margin: 5px auto;
 }
-.buttonS{
+.but{
     background-color: #1c3879;
     height: 40px;
-    width: 130px;
-    font-size: 13px;
-    border-radius: 15px;
+    width: 100px;
+    font-size: 14px;
+    color: white;
+    border-radius: 25px;
     border: #d9d9d9;
-    text-align: center;
 }
-.buttonS:hover {
+.but:hover {
     background-color: #2d8bba;
-    font-size: 13px;
 }
 
 .grid3{
@@ -82,7 +78,7 @@ footer{
     background-color: #d9d9d9;
 }
 
-.text { 
+.tex { 
     grid-area: 1 / 1 / 2 / 2; 
     text-align: center;
     font-size: 20px;
@@ -98,13 +94,13 @@ footer{
     grid-area: 2 / 1 / 3 / 4;
     background-color: #1c3879;
 }
-.button2{ 
+.b2{ 
     border-radius: 100%;
     width: 45px;
     height: 45px;
     border: 2px;
 }
-.button2:hover{
+.b2:hover{
     background-color: #1c3879;
 }
 .img{
@@ -112,6 +108,7 @@ footer{
     height: 20px;
     align: center;
 }
+
 
 
 
