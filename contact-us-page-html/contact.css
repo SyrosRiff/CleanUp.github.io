@@ -155,13 +155,11 @@ body{
     background-color: #ffffff;
 }
 
-
 .contact-box{
     background: #e4e8ef;
     display: flex;
     padding: 25px;
 }
-
 
 .contact-box-left{
     flex-basis: 50%;
@@ -227,31 +225,44 @@ button:hover {
     background:#346ccf;
   }
   
-
-.team{
-    text-align: center;
-    background: #ffffff;
+/* The Team */
+.team_header{
+  text-align: center;
 }
 
-.sub-team{
-    background: #001945;
-    display: flex;
-    justify-content: center;
-    padding: 15px
+.photo-grid-container {
+display: flex;
+justify-content: center;
 }
 
-.card{
-    padding-left: 20px;
-    padding-right: 20px;
+.photo-grid {
+width: 1100px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;
+}
+
+.photo-grid-item {
+background-color:  #1c3879;
+border-radius: 10px;
+border: 1px solid #ffffff;
+width: 300px;
+height: 300px;
 }
 
 .name{
-    padding: 0px;
-    font-weight: bold;
-    font-size: 18px;
-    color:  #e4e8ef;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+padding: 0px;
+font-weight: bold;
+font-size: 18px;
+color:   #ffffff;
+text-align: center;
 } 
-.about{
-    font-size: 14px;
-    color:  #e4e8ef;
-}
+
+.name, .socials{
+background-color:  #001945;
+text-align: center;
+} 
