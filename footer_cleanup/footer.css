@@ -45,15 +45,15 @@ footer{
 .buttonS{
     background-color: #1c3879;
     height: 40px;
-    width: 120px;
-    font-size: 13px;
+    width: 130px;
+    font-size: 15px;
     border-radius: 15px;
     border: #d9d9d9;
     text-align: center;
 }
 .buttonS:hover {
     background-color: #2d8bba;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .grid3{
