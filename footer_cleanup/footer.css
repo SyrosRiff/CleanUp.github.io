@@ -50,6 +50,7 @@ footer{
     border-radius: 15px;
     border: #d9d9d9;
     text-align: center;
+    margin: auto;
 }
 .button:hover {
     background-color: #2d8bba;
