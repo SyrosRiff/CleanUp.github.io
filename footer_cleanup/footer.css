@@ -45,7 +45,7 @@ footer{
 .buttonS{
     background-color: #1c3879;
     height: 40px;
-    width: 130px;
+    width: 120px;
     font-size: 13px;
     border-radius: 15px;
     border: #d9d9d9;
@@ -53,7 +53,7 @@ footer{
 }
 .buttonS:hover {
     background-color: #2d8bba;
-    font-size: 5px;
+    font-size: 13px;
 }
 
 .grid3{
