@@ -46,14 +46,14 @@ footer{
     background-color: #1c3879;
     height: 40px;
     width: 130px;
-    font-size: 15px;
+    font-size: 13px;
     border-radius: 15px;
     border: #d9d9d9;
     text-align: center;
 }
 .buttonS:hover {
     background-color: #2d8bba;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .grid3{
