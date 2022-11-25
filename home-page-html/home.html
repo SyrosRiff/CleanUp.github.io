@@ -6,7 +6,6 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="../footer_cleanup/footer.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -141,73 +140,37 @@
 <head>
 	<link href="footer.css" rel="stylesheet">
 </head>
-<footer>
-
-	<gap class="grid1"></gap>
-	<top class="grid2">
-		<div class="gridItem2">
-			<text class="font">Join Us<text>
-			<div class="smallLine"></div>
-			<button class="button font" href="../our-impact-html/our-impact.html" type="button">Our Impact</button>
-		</div>
-		<div class="gridItem2">
-			<text class="font">Be Involved<text>
-			<div class="smallLine"></div>
-			<button class="button font" href="../contact-us-page-html/contact-us-page.html" type="button">Contact Us</button>
-		</div>
-		<div class="gridItem2">
-			<text class="font">Support Us<text>
-			<div class="smallLine"></div>
-			<button class="button font" href="" type="button">Affiliates</button>
-		</div>
-	</top>
-
-	<bottom class="grid3">
-		<div class="gridItem3">
-			<text class="fontbold">Website</text>
-				<a class="font a" href="../home-page-html/home.html">Home</a>
-				<a class="font a" href="">Solutions</a>
-				<a class="font a" href="../features/features.html">Features</a>
-		</div>
-		<div class="gridItem3">
-			<text class="fontbold">Resources</text>
-				<a class="font a" href="../contact-us-page-html/contact-us-page.html">Contact Us</a>
-				<a class="font a" href="">FAQ</a>
-				<a class="font a" href="">Privacy</a>
-				<a class="font a" href="">Policy</a>
-		</div>
-		<div class="gridItem3">
-			<text class="fontbold">Company</text>
-				<a class="font a" href="">About</a>
-		</div>
-		<div class="gridItem3">
-			<text class="fontbold">Language</text>
-				<a class="font a" href="">Mandarin</a>
-				<a class="font a" href="">French</a>
-				<a class="font a" href="">English</a>
-				<a class="font a" href="">Spanish</a>
-		</div>
-	</bottom>
-
-	<low class="grid4">
-		<text class="font text">ⒸCleanUp. All rights reserved.</text>
-		<div class="buttons">
-			<button class="font button2" type="button" href="">
-				<img class="img" src="../footer_cleanup/facebook.png"></img>
-			</button>
-			<button class="font button2" type="button" href="">
-				<img class="img" src="../footer_cleanup/instagram.png"></img>
-			</button>
-			<button class="font button2" type="button" href="">
-				<img class="img" src="../footer_cleanup/twitter.png"></img>
-			</button>
-			<button class="font button2" type="button" href="">
-				<img class="img" src="../footer_cleanup/in.png"></img>
-			</button>
-		</div>
-		<line class="line"></line>
-		<space class="space"></space>
-	</low>
-
-</footer>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+<div w3-include-html="../footer_cleanup/footer.html"></div> 
+<script>
+includeHTML();
+</script>
 </body>
