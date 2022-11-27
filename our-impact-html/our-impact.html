@@ -290,8 +290,11 @@
         opacity: 0.3;
       }
       .empty2 {
-        color: white;
-        line-height: 400px;
+        background-color: #1c3879;
+        color: #1c3879;
+        line-height: 150px;
+        margin-top: 20px ;
+        margin-bottom: 20 px;
       }
       .community {
         display: flex;
@@ -304,48 +307,20 @@
       }
       img.plastic {
         display: block;
-        width: 400px;
-        height: 300px;
+        width: 500px;
+        height: 400px;
         object-fit: cover;
         margin-left: 90px;
+        border-radius: 0px 0px 20px 70px ;
+        display: block ;
+        transition: .5s ease ;
+        cursor: pointer ;
       }
-      .overlay {
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        right: 0;
-        background-color: darkblue;
-        overflow: hidden;
-        width: 95%;
-        height: 0;
-        transition: 0.5s ease;
-        border-radius: 8px;
-      }
-      .communityImg:hover .overlay {
-        bottom: 0;
-        height: 100%;
-      }
-      .overlayText {
-        font-family: "Fredoka", sans-serif;
-        white-space: nowrap;
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        overflow: hidden;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        -ms-transform: translate(-50%, -50%);
-      }
-      .communityText {
-        font-family: "Fredoka", sans-serif;
-        color: darkblue;
-        font-size: 20px;
-        padding-right: 20px;
-        margin-left: 50px;
+      .plastic:hover {
+        opacity: 0.3 ;
       }
       .fosterText {
-        border-top: solid 3px darkblue;
+        border-top: solid 3px #1c3879;
       }
       .secondC {
         width: 15rem;
@@ -355,33 +330,40 @@
         left: 4px;
       }
       .tokyo {
-        width: 900px;
+        width: 100%;
         height: 300px;
         object-fit: cover;
+        border-radius: 0px 0px 50px 50px ;
       }
       div.city {
         display: flex;
       }
-      div.bubble {
-        background-color: #1c3879;
-        border-radius: 50%;
-        text-align: center;
-        position: relative;
-        line-height: 40px;
-        width: 300px;
-        height: 300px;
+      div.empty3{
+        background: #1c3879 ;
+        color: #1c3879 ;
+        margin-top: 100px ;
       }
-      .bubble::after {
-        content: "";
-        display: block;
-        padding-bottom: 100%;
+      div.final{
+        margin-top: 20px ;
+        text-align: center ;
+        font-family: "Fredoka", sans-serif ;
       }
-      .bubbleText {
-        font-family: "Fredoka", sans-serif;
-        color: white;
-        position: absolute;
-        width: 100%;
-        text-align: center;
+      p.final{
+        font-size: 18px ;
+        line-height: 20px ;
+        margin-top: 50px ;
+        margin-left: 60px ;
+        margin-right: 60px ;
+        margin-bottom: 60px ;
+      }
+      p.callAction{
+        line-height: 40px ;
+        font-size: 40px ;
+        margin-top: 40px ;
+        margin-left: 100px ;
+        margin-right: 100px ;
+        margin-bottom: 100px ;
+        color: #1c3879 ;
       }
     </style>
   </head>
@@ -454,12 +436,10 @@
           src="https://noc.ac.uk/files/images/story/iStock-620379862.jpg"
           alt="plastic pollution"
         />
-        <div class="overlay">
-          <div class="overlayText">Download the app!</div>
-        </div>
       </div>
     </div>
-    <br /><br />
+    <br /><br/>
+    <div class = "empty3">Third easter egg</div>
     <div class="city">
       <img
         class="tokyo"
@@ -467,14 +447,10 @@
         width="500"
         height="300"
       />
-      <div class="bubble">
-        <div class="bubbleText">
-          <br />CleanUp helps you<br />
-          be a part of <br />that downward trend.
-        </div>
-      </div>
     </div>
-    <br />
-    <br />
+    <div class = "final">
+      <p class = "final">Mismanaged waste does not disappear; it accumulates.<br>What we do matters.</p>
+      <p class = "callAction">Properly disposing of waste and making conscious, greener decisions can help the global issue.<br>CleanUp wants to spearhead your journey through it all.</p>
+    </div>
   </body>
 </html>
