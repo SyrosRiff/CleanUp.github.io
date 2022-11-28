@@ -151,15 +151,15 @@ header {
   margin: auto;
 }
 
-button {
+.button {
   display: block;
 }
 
-h2 {
+.h2 {
   font-family: "Quicksand", sans-serif;
 }
 
-h1 {
+.h1 {
   font-family: "Quicksand", sans-serif;
 }
 
