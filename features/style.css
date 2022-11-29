@@ -200,8 +200,9 @@ header {
   grid-template-columns: 1fr 1fr;
 }
 .item{
-  margin-left: 100px;
+  margin-left: 30%;
 }
+
 .track {
   width: 1130px;
   margin: 0 auto;
@@ -213,6 +214,11 @@ header {
   box-sizing: border-box;
   background-color: white;
   grid-template-columns: 1fr 1fr;
+}
+
+.feature{
+  width: 100%;
+  height: auto;
 }
 
 .stripe {
@@ -269,15 +275,16 @@ header {
   padding: 0 24px;
   color: #fff;
   height: 100%;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400px;
 }
 .button_icon {
   display: inline-flex;
   align-items: center;
-  padding: 0 50px;
+  padding-right: 15px;
   color: #fff;
   height: 100%;
+  font-size: 6em;
 }
 
 .button_caption {
@@ -287,33 +294,33 @@ header {
   padding: 0 24px;
   color: #fff;
   height: 100%;
-  font-size: 15px;
+  font-size: 12px;
 }
 
-.button_icon {
-  font-size: 6em;
-  background: rgba(0, 0, 0, 0.08);
-}
 
 .value {
+  overflow: hidden;
   display: flex;
   height: 150px;
+  width: 380px; 
   background: #1c3879;
   border: 5px solid rgb(9, 2, 66);
   outline: none;
   border-radius: 25px;
-  overflow: hidden;
+  overflow: auto;
+  word-wrap: break-word;
+  max-width: 100%; 
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
 
 .container {
+  display: flex;
   margin: 0 auto;
-  flex-direction: column;
   max-height: 100%;
   max-width: 100%;
-  width: 1250px;
+  width: fit-content;
   background-color: #acb7cb;
   border-radius: 22px;
   padding: 60px;
@@ -340,7 +347,9 @@ header {
 .group {
   display: block;
   justify-content: center;
-  width: 90vh;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
 }
 
 .content {
